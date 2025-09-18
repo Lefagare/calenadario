@@ -1,0 +1,253 @@
+{
+  "app_features": [
+    "Calendar view (mensual, semanal, diario)",
+    "Multi-platform posting (Instagram, TikTok, Facebook, LinkedIn, Twitter)",
+    "Content planning con drag & drop",
+    "Copy storage y templates",
+    "Funnel stage tracking",
+    "Quick links a todas las redes sociales",
+    "Analytics básicos",
+    "Collaborative planning",
+    "Auto-scheduling basado en mejores horarios"
+  ],
+  "social_platforms": [
+    {
+      "name": "Instagram",
+      "icon": "📸",
+      "best_times": [
+        "11:00-13:00",
+        "19:00-21:00"
+      ],
+      "content_types": [
+        "Posts",
+        "Stories",
+        "Reels",
+        "IGTV"
+      ],
+      "direct_link": "https://www.instagram.com"
+    },
+    {
+      "name": "TikTok",
+      "icon": "🎵",
+      "best_times": [
+        "06:00-10:00",
+        "19:00-21:00"
+      ],
+      "content_types": [
+        "Videos",
+        "Live"
+      ],
+      "direct_link": "https://www.tiktok.com"
+    },
+    {
+      "name": "Facebook",
+      "icon": "👥",
+      "best_times": [
+        "13:00-15:00"
+      ],
+      "content_types": [
+        "Posts",
+        "Stories",
+        "Videos",
+        "Events"
+      ],
+      "direct_link": "https://www.facebook.com"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "💼",
+      "best_times": [
+        "08:00-10:00",
+        "12:00-14:00"
+      ],
+      "content_types": [
+        "Posts",
+        "Articles",
+        "Stories"
+      ],
+      "direct_link": "https://www.linkedin.com"
+    },
+    {
+      "name": "Twitter/X",
+      "icon": "🐦",
+      "best_times": [
+        "08:00-10:00",
+        "19:00-21:00"
+      ],
+      "content_types": [
+        "Tweets",
+        "Threads",
+        "Spaces"
+      ],
+      "direct_link": "https://www.x.com"
+    },
+    {
+      "name": "YouTube",
+      "icon": "📺",
+      "best_times": [
+        "14:00-16:00",
+        "20:00-22:00"
+      ],
+      "content_types": [
+        "Videos",
+        "Shorts",
+        "Live"
+      ],
+      "direct_link": "https://www.youtube.com"
+    }
+  ],
+  "funnel_stages": [
+    {
+      "stage": "Awareness",
+      "description": "Generar conocimiento de marca",
+      "content_types": [
+        "Educational posts",
+        "Industry insights",
+        "Trending topics"
+      ],
+      "metrics": [
+        "Reach",
+        "Impressions",
+        "Brand mentions"
+      ],
+      "color": "#FF6B6B"
+    },
+    {
+      "stage": "Interest",
+      "description": "Despertar interés en productos/servicios",
+      "content_types": [
+        "Product showcases",
+        "Behind the scenes",
+        "Tutorials"
+      ],
+      "metrics": [
+        "Engagement rate",
+        "Saves",
+        "Shares"
+      ],
+      "color": "#4ECDC4"
+    },
+    {
+      "stage": "Consideration",
+      "description": "Evaluación de opciones",
+      "content_types": [
+        "Comparisons",
+        "Reviews",
+        "Case studies"
+      ],
+      "metrics": [
+        "Click-through rate",
+        "Time spent",
+        "Downloads"
+      ],
+      "color": "#45B7D1"
+    },
+    {
+      "stage": "Intent",
+      "description": "Intención de compra",
+      "content_types": [
+        "Demos",
+        "Free trials",
+        "Consultations"
+      ],
+      "metrics": [
+        "Lead generation",
+        "Sign-ups",
+        "Contact forms"
+      ],
+      "color": "#96CEB4"
+    },
+    {
+      "stage": "Purchase",
+      "description": "Conversión a cliente",
+      "content_types": [
+        "Offers",
+        "Promotions",
+        "Testimonials"
+      ],
+      "metrics": [
+        "Conversion rate",
+        "Sales",
+        "Revenue"
+      ],
+      "color": "#FECA57"
+    },
+    {
+      "stage": "Retention",
+      "description": "Fidelización y repeat business",
+      "content_types": [
+        "Customer stories",
+        "Loyalty programs",
+        "Updates"
+      ],
+      "metrics": [
+        "Customer lifetime value",
+        "Repeat purchases",
+        "Referrals"
+      ],
+      "color": "#FF9FF3"
+    }
+  ],
+  "content_templates": [
+    {
+      "name": "Educational Post",
+      "template": "🎓 [TOPIC]: [KEY INSIGHT]\n\n📍 Key points:\n• [POINT 1]\n• [POINT 2] \n• [POINT 3]\n\n💡 Pro tip: [TIP]\n\n❓ What's your experience with [TOPIC]? Comment below!\n\n#education #tips #[INDUSTRY]",
+      "funnel_stage": "Awareness"
+    },
+    {
+      "name": "Behind the Scenes",
+      "template": "🎬 Behind the scenes: [ACTIVITY]\n\n[PERSONAL STORY OR INSIGHT]\n\n✨ This is why we do what we do:\n[MOTIVATION/PURPOSE]\n\n🤝 Tag someone who would love to see this!\n\n#behindthescenes #authenticity #[BRAND]",
+      "funnel_stage": "Interest"
+    },
+    {
+      "name": "Social Proof",
+      "template": "🌟 Client Spotlight: [CLIENT NAME]\n\n💬 \"[TESTIMONIAL]\"\n\n📈 Results achieved:\n✅ [RESULT 1]\n✅ [RESULT 2]\n✅ [RESULT 3]\n\n💭 Want similar results? [CTA]\n\n#testimonial #results #success",
+      "funnel_stage": "Consideration"
+    },
+    {
+      "name": "Promotional",
+      "template": "🚀 [OFFER/PRODUCT NAME]\n\n🎁 Special offer: [DISCOUNT/BONUS]\n\n⏰ Limited time: [DEADLINE]\n\n📋 What you get:\n• [BENEFIT 1]\n• [BENEFIT 2]\n• [BENEFIT 3]\n\n👆 Link in bio or DM us!\n\n#offer #limited #[PRODUCT]",
+      "funnel_stage": "Purchase"
+    }
+  ],
+  "sample_calendar_data": [
+    {
+      "date": "2025-09-19",
+      "posts": [
+        {
+          "time": "09:00",
+          "platform": "LinkedIn",
+          "content": "🎓 Marketing Automation: The game-changer for 2025 businesses",
+          "funnel_stage": "Awareness",
+          "status": "scheduled"
+        },
+        {
+          "time": "14:00",
+          "platform": "Instagram",
+          "content": "Behind the scenes: Creating viral content strategies",
+          "funnel_stage": "Interest",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "posts": [
+        {
+          "time": "11:00",
+          "platform": "TikTok",
+          "content": "3 automation tools that changed my business",
+          "funnel_stage": "Interest",
+          "status": "scheduled"
+        },
+        {
+          "time": "19:00",
+          "platform": "Instagram",
+          "content": "Client success story: 300% ROI improvement",
+          "funnel_stage": "Consideration",
+          "status": "published"
+        }
+      ]
+    }
+  ]
+}

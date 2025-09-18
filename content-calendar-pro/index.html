@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Calendar Pro - Gestión de Contenido para Redes Sociales</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-calendar-check"></i>
+                    <h1>Content Calendar Pro</h1>
+                </div>
+                <nav class="nav-main">
+                    <button class="nav-btn active" data-view="calendar">
+                        <i class="fas fa-calendar"></i>
+                        Calendario
+                    </button>
+                    <button class="nav-btn" data-view="templates">
+                        <i class="fas fa-file-alt"></i>
+                        Templates
+                    </button>
+                    <button class="nav-btn" data-view="analytics">
+                        <i class="fas fa-chart-bar"></i>
+                        Estadísticas
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Acceso Rápido a Redes</h3>
+                <div class="social-links" id="socialLinks">
+                    <!-- Links will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Filtros</h3>
+                <div class="filters">
+                    <select class="form-control filter-select" id="platformFilter">
+                        <option value="">Todas las plataformas</option>
+                    </select>
+                    <select class="form-control filter-select" id="funnelFilter">
+                        <option value="">Todas las etapas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Búsqueda</h3>
+                <input type="text" class="form-control" id="searchInput" placeholder="Buscar contenido...">
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Exportar</h3>
+                <button class="btn btn--secondary btn--sm btn--full-width" id="exportBtn">
+                    <i class="fas fa-download"></i>
+                    Exportar Datos
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Calendar View -->
+            <div class="view calendar-view active" id="calendarView">
+                <div class="view-header">
+                    <div class="calendar-controls">
+                        <button class="btn btn--outline" id="prevMonth">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h2 class="current-month" id="currentMonth"></h2>
+                        <button class="btn btn--outline" id="nextMonth">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <button class="btn btn--primary" id="addPostBtn">
+                        <i class="fas fa-plus"></i>
+                        Nuevo Post
+                    </button>
+                </div>
+
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Templates View -->
+            <div class="view templates-view" id="templatesView">
+                <div class="view-header">
+                    <h2>Templates de Contenido</h2>
+                    <p class="text-secondary">Utiliza estos templates para crear contenido rápidamente</p>
+                </div>
+                <div class="templates-grid" id="templatesGrid">
+                    <!-- Templates will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Analytics View -->
+            <div class="view analytics-view" id="analyticsView">
+                <div class="view-header">
+                    <h2>Estadísticas de Contenido</h2>
+                    <p class="text-secondary">Analiza la distribución de tu contenido</p>
+                </div>
+                <div class="analytics-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Posts por Plataforma</h3>
+                            <div class="stats-list" id="platformStats">
+                                <!-- Stats will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Posts por Etapa del Funnel</h3>
+                            <div class="stats-list" id="funnelStats">
+                                <!-- Stats will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Estados de Publicación</h3>
+                            <div class="stats-list" id="statusStats">
+                                <!-- Stats will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Post Modal -->
+    <div class="modal hidden" id="postModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Nuevo Post</h3>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="postForm">
+                    <input type="hidden" id="postId" value="">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="postDate">Fecha</label>
+                            <input type="date" class="form-control" id="postDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="postTime">Hora</label>
+                            <input type="time" class="form-control" id="postTime" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="postPlatform">Red Social</label>
+                        <select class="form-control" id="postPlatform" required>
+                            <option value="">Seleccionar plataforma</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="postContent">Contenido</label>
+                        <textarea class="form-control" id="postContent" rows="8" placeholder="Escribe tu contenido aquí..." required></textarea>
+                        <div class="character-count">
+                            <span id="charCount">0</span> caracteres
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="postFunnelStage">Etapa del Funnel</label>
+                        <select class="form-control" id="postFunnelStage" required>
+                            <option value="">Seleccionar etapa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="postStatus">Estado</label>
+                        <select class="form-control" id="postStatus" required>
+                            <option value="draft">Borrador</option>
+                            <option value="scheduled">Programado</option>
+                            <option value="published">Publicado</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--outline" id="cancelBtn">Cancelar</button>
+                <button class="btn btn--secondary" id="deleteBtn" style="display: none;">
+                    <i class="fas fa-trash"></i>
+                    Eliminar
+                </button>
+                <button class="btn btn--primary" id="saveBtn">
+                    <i class="fas fa-save"></i>
+                    Guardar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Modal -->
+    <div class="modal hidden" id="templateModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="templateModalTitle">Preview del Template</h3>
+                <button class="modal-close" id="closeTemplateModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="template-preview">
+                    <h4 id="templateName"></h4>
+                    <div class="template-funnel-stage" id="templateFunnelStage"></div>
+                    <div class="template-content" id="templateContent"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--outline" id="cancelTemplateBtn">Cancelar</button>
+                <button class="btn btn--primary" id="useTemplateBtn">
+                    <i class="fas fa-check"></i>
+                    Usar Template
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications -->
+    <div class="notification hidden" id="notification">
+        <div class="notification-content">
+            <span class="notification-text" id="notificationText"></span>
+            <button class="notification-close" id="closeNotification">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- PDF Download Link -->
+    <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/dd88a74c56a8b2038b07c6d806fb3634/27394004-5107-4fc0-9a44-8bbc856569bb/pdf_9f0553a2.pdf" 
+       target="_blank" 
+       class="pdf-download-link"
+       title="Descargar Guía de Marketing Digital 2025">
+        <i class="fas fa-file-pdf"></i>
+        Descargar Guía Completa de Marketing Digital 2025
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>

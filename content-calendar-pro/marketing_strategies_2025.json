@@ -1,0 +1,215 @@
+{
+  "estrategias_principales": [
+    {
+      "nombre": "Personalización Hyper-específica",
+      "descripcion": "75% de consumidores más propensos a comprar de marcas que ofrecen contenido personalizado",
+      "herramientas": [
+        "IA Generativa",
+        "Analytics en tiempo real",
+        "CDP (Customer Data Platform)"
+      ],
+      "roi": "48% de líderes en personalización exceden metas de ingresos",
+      "procesos_automatizables": [
+        "Segmentación de audiencia",
+        "Entrega de contenido dinámico",
+        "Emails personalizados"
+      ]
+    },
+    {
+      "nombre": "Experiencias Omnicanal",
+      "descripcion": "Integración de todos los puntos de contacto del cliente en un viaje consistente",
+      "herramientas": [
+        "HubSpot",
+        "Salesforce",
+        "Adobe Experience Cloud"
+      ],
+      "roi": "Mayor engagement y lealtad del cliente",
+      "procesos_automatizables": [
+        "Sincronización de canales",
+        "Mensajería consistente",
+        "Seguimiento cross-platform"
+      ]
+    },
+    {
+      "nombre": "Video de Formato Corto",
+      "descripcion": "Contenido de video corto domina engagement en TikTok, Instagram Reels, YouTube Shorts",
+      "herramientas": [
+        "Canva",
+        "Animoto",
+        "Moovly",
+        "CapCut"
+      ],
+      "roi": "10x mayor engagement que blogs tradicionales",
+      "procesos_automatizables": [
+        "Generación de templates",
+        "Scheduling automático",
+        "Optimización de horarios"
+      ]
+    },
+    {
+      "nombre": "IA para Decisiones Predictivas",
+      "descripcion": "IA que predice comportamiento del cliente y optimiza campañas en tiempo real",
+      "herramientas": [
+        "ChatGPT",
+        "Claude",
+        "Perplexity",
+        "Marketing AI platforms"
+      ],
+      "roi": "40% aumento en CTR con optimización dinámica",
+      "procesos_automatizables": [
+        "Optimización de pujas",
+        "Targeting automático",
+        "Generación de creativos"
+      ]
+    },
+    {
+      "nombre": "Social Commerce",
+      "descripcion": "Compras directas a través de plataformas sociales",
+      "herramientas": [
+        "Instagram Shopping",
+        "Facebook Shops",
+        "TikTok Shopping"
+      ],
+      "roi": "71% consumidores comprarían más con AR disponible",
+      "procesos_automatizables": [
+        "Catalogación de productos",
+        "Gestión de inventario",
+        "Procesamiento de pedidos"
+      ]
+    },
+    {
+      "nombre": "Marketing de Micro-Influencers",
+      "descripcion": "Colaboraciones con influencers de nicho para mayor autenticidad",
+      "herramientas": [
+        "Creator marketplaces",
+        "Analytics de influencers",
+        "Platforms de colaboración"
+      ],
+      "roi": "3x mayor ROI que anuncios tradicionales",
+      "procesos_automatizables": [
+        "Identificación de influencers",
+        "Gestión de campañas",
+        "Medición de resultados"
+      ]
+    }
+  ],
+  "procesos_automatizables": {
+    "creacion_contenido": [
+      "Generación de captions con IA",
+      "Creación de imágenes automatizada",
+      "Producción de videos con templates",
+      "Optimización SEO automática",
+      "Traducción multiidioma"
+    ],
+    "distribucion": [
+      "Scheduling multi-plataforma",
+      "Publicación cross-posting",
+      "Optimización de horarios",
+      "Gestión de calendarios",
+      "Distribución por segmentos"
+    ],
+    "engagement": [
+      "Respuestas automáticas",
+      "Moderación de comentarios",
+      "Chatbots inteligentes",
+      "Social listening",
+      "Gestión de crisis automática"
+    ],
+    "analytics": [
+      "Reportes automáticos",
+      "Análisis de sentimientos",
+      "Tracking de conversiones",
+      "Análisis competitivo",
+      "ROI measurement"
+    ],
+    "funnel_management": [
+      "Lead scoring automático",
+      "Nurturing sequences",
+      "Email automation",
+      "Retargeting dinámico",
+      "Customer journey mapping"
+    ]
+  },
+  "herramientas_top_2025": [
+    {
+      "nombre": "SocialBee",
+      "categoria": "Scheduling",
+      "precio": "$29/mes",
+      "funciones": [
+        "AI Copilot",
+        "Category-based scheduling",
+        "Content curation",
+        "RSS feeds"
+      ]
+    },
+    {
+      "nombre": "HubSpot",
+      "categoria": "All-in-one",
+      "precio": "$33.60/mes",
+      "funciones": [
+        "CRM integrado",
+        "Email automation",
+        "Lead scoring",
+        "Analytics"
+      ]
+    },
+    {
+      "nombre": "ChatGPT/Claude",
+      "categoria": "AI Content",
+      "precio": "$20/mes",
+      "funciones": [
+        "Content generation",
+        "Copy optimization",
+        "Strategy planning",
+        "Trend analysis"
+      ]
+    },
+    {
+      "nombre": "Canva",
+      "categoria": "Design",
+      "precio": "$15/mes",
+      "funciones": [
+        "Templates automáticos",
+        "Brand kit",
+        "Bulk creation",
+        "Social templates"
+      ]
+    },
+    {
+      "nombre": "ActiveCampaign",
+      "categoria": "Email Automation",
+      "precio": "$39/mes",
+      "funciones": [
+        "Behavior-based emails",
+        "CRM",
+        "Segmentation",
+        "A/B testing"
+      ]
+    }
+  ],
+  "content_strategies": {
+    "viral_content_formulas": [
+      "Emotional triggers (Joy, Surprise, Anger)",
+      "Trending topics + Brand context",
+      "User-generated content amplification",
+      "Behind-the-scenes content",
+      "Educational micro-content",
+      "Interactive polls/quizzes",
+      "Meme marketing adaptado",
+      "Storytelling en primera persona"
+    ],
+    "optimal_posting_times": {
+      "Instagram": "11:00 AM - 1:00 PM, 7:00 PM - 9:00 PM",
+      "TikTok": "6:00 AM - 10:00 AM, 7:00 PM - 9:00 PM",
+      "LinkedIn": "8:00 AM - 10:00 AM, 12:00 PM - 2:00 PM",
+      "Facebook": "1:00 PM - 3:00 PM",
+      "Twitter/X": "8:00 AM - 10:00 AM, 7:00 PM - 9:00 PM"
+    },
+    "content_pillars": [
+      "Educational (40%)",
+      "Entertainment (30%)",
+      "Promotional (20%)",
+      "User-generated (10%)"
+    ]
+  }
+}
